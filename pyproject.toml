@@ -10,7 +10,6 @@ authors = [
   { name = "Your name (or your organization/company/team)", email = "your@email.com" },
 ]
 
-keywords = ["machine learning", "MLOps"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Programming Language :: Python :: 3",
@@ -18,10 +17,6 @@ classifiers = [
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "fastapi==0.115.6",
-    "torch==2.6.0",
-    "typer==0.15.1",
-    "uvicorn==0.34.0",
 ]
 
 [dependency-groups]
@@ -35,20 +30,6 @@ dev = [
     "mkdocs-material==9.7.1",
     "mkdocstrings-python==2.0.1",
 ]
-
-
-[tool.uv.sources]
-torch = [
-    { index = "pytorch-cpu" },
-]
-torchvision = [
-    { index = "pytorch-cpu" },
-]
-
-[[tool.uv.index]]
-name = "pytorch-cpu"
-url = "https://download.pytorch.org/whl/cpu"
-explicit = true
 
 [tool.ruff]
 line-length = 120
